@@ -7,7 +7,7 @@ running = True
 dt = 0
 suelo = pygame.Rect(0, screen.get_height() -50, screen.get_width(), 50)
 jugador = pygame.Vector2(screen.get_height() / 2, screen.get_width() / 2)
-gravedad = 300
+gravedad = 400
 
 while running:
     for event in pygame.event.get():
