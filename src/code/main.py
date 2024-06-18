@@ -16,7 +16,7 @@ while running:
 
     screen.fill("purple")
     
-    pygame.draw.rect(screen, "brown", suelo)
+    pygame.draw.rect(screen, "green", suelo)
     pygame.draw.circle(screen, "red", jugador, 40)
 
     keys = pygame.key.get_pressed()
