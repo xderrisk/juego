@@ -17,6 +17,8 @@ while running:
             running = False
 
     keys = pygame.key.get_pressed()
+    if keys[pygame.K_w]:
+        jugador.y -= 300 * dt #sub
     if keys[pygame.K_s]:
         jugador.y += 300 * dt #cae
     if keys[pygame.K_a]:
@@ -33,9 +35,9 @@ while running:
         jugador.x = limite.right - 10
 
     screen.fill('black')
-    pygame.display.flip()
     pygame.draw.rect(screen, 'red', limite, 1)
     pygame.draw.circle(screen, 'orange', jugador, 10)
+    pygame.display.flip()
     clock.tick(60)
     dt = clock.tick(60) / 1000
 
